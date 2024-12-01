@@ -3,3 +3,4 @@
 #a function for raising the first number to the power of the second.
 def degree(a, b):
     return a ** b
+
