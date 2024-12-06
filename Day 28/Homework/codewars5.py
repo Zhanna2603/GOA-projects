@@ -3,7 +3,4 @@
 # String ends with?
 
 def solution(text, ending):
-    if text.ends_with(ending):
-        return "True"
-    else: 
-        return "False"
+    return text.endswith(ending)
