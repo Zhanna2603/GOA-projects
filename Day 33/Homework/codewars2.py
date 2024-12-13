@@ -2,7 +2,13 @@
 
 # Reverse a Number
 
-# def reverse_number(n):
-#         sign = -1 if n < 0 else 1
-#     n = abs(n)
-#     return int(str(n)[::-1]) * sign
+def reverse_number(n):
+    if n < 0 :
+        n = str(n)
+        n = n[1::]
+        n = int(n[::-1])
+        return -n
+    else:
+        n = str(n)
+        n = n[::-1]
+        return int(n)

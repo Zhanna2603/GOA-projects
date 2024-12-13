@@ -2,5 +2,9 @@
 
 # Find the stray number
 
-# def find_different_number(arr):
-#     return min(set(arr), key = arr.count)
+def stray(arr):
+    for i in range(len(arr)):
+        if arr[0] != arr[1] and arr[0] != arr[2]:
+            return arr[0]
+        if arr[0] != arr[i]:
+            return arr[i]
