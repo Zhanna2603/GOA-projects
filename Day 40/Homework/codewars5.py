@@ -2,3 +2,9 @@
 
 # Calculate Variance
 
+def variance(numbers): 
+    overage = sum(numbers)/len(numbers)
+    result = 0
+    for i in numbers:
+        result += (i-overage)**2
+    return result/len(numbers)
