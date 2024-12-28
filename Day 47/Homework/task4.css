@@ -1,0 +1,13 @@
+nav{
+    text-decoration: none;
+}
+nav:hover{
+    color:rgb(240, 240, 0);
+    text-decoration:overline, color black;
+}
+nav:active{
+    color:rgb(0, 0, 0);
+    text-decoration:overline, rgb(240, 240, 0);
+}
+
+
