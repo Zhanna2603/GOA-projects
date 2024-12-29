@@ -3,8 +3,8 @@
 # Find the missing letter
 
 def find_missing_letter(chars):
-    alphabet = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz"
+    alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     for i in range(1,len(chars)):
-        if alphabet [alphabet.index(chars[i])-1] != chars[i-1]:
-            return [alphabet.index(chars[i])-1]
+        if alphabet.index(chars[i]) != alphabet.index(chars[i-1])+1:
+            return alphabet[alphabet.index(chars[i])-1]
         

@@ -3,9 +3,8 @@
 # Summing a number's digits
 
 def sum_digits(number):
+    num_str = str(abs(number))
     sum = 0
-    for digit in str(number):
+    for digit in num_str:
         sum += int(digit)
     return sum
-
-# 1 mistake 

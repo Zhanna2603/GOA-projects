@@ -3,8 +3,8 @@
 # Mumbling
 
 def accum(st):
-    result =""
+    result = []
     for i in range(len(st)):
-        result += st.upper() + st.lower()
-    
-    return result [:-1]
+        char = st[i]
+        result.append(char.upper() + char.lower() * i)
+    return '-'.join(result)

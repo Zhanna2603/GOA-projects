@@ -3,7 +3,12 @@
 # Find Count of Most Frequent Item in an Array
 
 def most_frequent_item_count(collection):
-    if not collection:
+    if not collection: 
         return 0
-    count = count(collection)
-    return(count.values())
+    frequency = {}
+    for num in collection:
+        if num in frequency:
+            frequency[num] += 1
+        else:
+            frequency[num] = 1
+    return max(frequency.values())
